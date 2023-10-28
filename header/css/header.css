@@ -1,0 +1,17 @@
+.header-top {
+    background-color: #777;
+    height: 30px;
+}
+
+.header-top .col-left p{
+    color: white;
+    font-size: .75em;
+}
+
+.header .col-left, .header .col-right {
+    display: flex;
+}
+
+.header-top div {
+    height: 100%;
+}
