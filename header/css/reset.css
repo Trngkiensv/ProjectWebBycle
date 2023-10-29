@@ -133,3 +133,7 @@ table {
 }
 
 /* End reset css */
+
+* {
+  font-family: Tahoam, Arial, sans-serif;
+}
