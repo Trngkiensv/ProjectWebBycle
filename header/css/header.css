@@ -27,7 +27,7 @@
 .header-top .col-left, .header-top .col-right, .header-top .col-middle {
     box-sizing: border-box;
     padding: 5px 0px;
-}
+}   
 
 
 .top-bar-nav {
@@ -135,4 +135,38 @@
 
 .col-middle {
     margin-left: -335px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-bottom .container {
+    height: 40px;
+    background-color: #000000;
+}
+
+.item {
+    display: inline-block;
+    font-weight: bold;
+    padding: 15px !important
+}
+
+.item:hover a {
+    color: aliceblue;
+}
+
+.item:hover + blur{
+    background-color: #777;
+}
+
+
+.item i {
+    color: #777;
+    font-size: .8em;
+}
+
+.blur {
+    width: 100vw;
+    height: 100vh;
 }
