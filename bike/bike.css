@@ -1,0 +1,28 @@
+/* Lĩnh */
+.page{
+    display: flex;
+}
+#best_seller{
+    float: left;
+    width: 20%;
+    margin-left: 50px;
+}
+#best_seller img{
+    width: 100%;
+    height: 3%;
+}
+.origin{
+    opacity: 0.5;
+    color: red;
+    font-weight: bold;
+    text-decoration: line-through;
+    float: left;
+}
+.price{
+    float: right;
+}
+#list_product{
+    float: right;
+    width: 75%;
+}
+/* Lĩnh */
