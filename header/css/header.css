@@ -1,3 +1,7 @@
+body {
+    background-color: gray;
+}
+
 .container {
     padding-left: 100px;
     padding-right: 100px;
@@ -43,7 +47,7 @@
     padding: 0 15px;
 }
 
-.top-nav-bar ul li:not(.top-nav-bar ul li:last-child) {
+.top-nav-bar ul li:not(.top-nav-bar ul li:last-child, .header-bottom li) {
     border-right: 1px solid #ffffff59;
 }
 
@@ -149,19 +153,23 @@ a {
 .item {
     display: inline-block;
     font-weight: bold;
-    padding: 15px !important
+    position: relative;
 }
 
-.item:hover a {
+.item:hover > a {
     color: aliceblue;
 }
 
-.item:hover + blur{
+.item:hover .menu-1 {
+    display: block;
+}
+
+.header:has(.item) ~ .blur {
     background-color: #777;
 }
 
 
-.item i {
+.item i {   
     color: #777;
     font-size: .8em;
 }
@@ -169,4 +177,62 @@ a {
 .blur {
     width: 100vw;
     height: 100vh;
+}
+
+.menu-1 {
+    display: none;
+    position: absolute;
+    background-color: #ffff;
+    padding: 20px 0;
+    top: 95.7%;
+    left: -9%;
+}
+
+.menu-1::before {
+    position: absolute;
+    box-sizing: border-box;
+    content: "";
+    display: block;
+    top: -2%;
+    left: 23%;
+    background-color: #fff0;
+    border-bottom: 10px solid rgb(255 255 255);
+    border-left: 10px solid #d9171700;
+    border-right: 10px solid #a3a3a300;
+}
+
+.menu-1 .menu-item-1 {
+    display: block;
+    padding: unset;
+}
+
+
+.menu-1 .menu-item-1 a {
+    display: block;
+    padding: 15px 15px;
+    min-width: 200px;
+    color: gray;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.menu-1 .menu-item-1 a:hover {
+    background-color: #cfcfcf;
+}
+
+.header-bottom .list-item .item {
+    padding: unset;
+}
+
+.header-bottom .list-item .item > a {
+    padding: 13px 0;
+    display: inline-block;
+}
+
+.header-bottom .list-item .item > a > p{
+    padding: 0 12px;
+}
+
+.header-bottom .list-item .item > a > p:not(.list-item .item:last-child a p) {
+    border-right: 1px solid;
 }
