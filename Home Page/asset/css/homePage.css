@@ -60,3 +60,7 @@
 .btn-pink {
     background-color: #fcb2b2 !important;
 }
+
+.carousel.slide.banner1 {
+    z-index: 0;
+}
