@@ -1,28 +1,126 @@
 /* Lĩnh */
-.page{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.page {
     display: flex;
 }
-#best_seller{
+
+/* san pham tieu bieu */
+#best_seller {
     float: left;
     width: 20%;
     margin-left: 50px;
+    text-align: center;
 }
-#best_seller img{
+
+#best_seller .title {
+    margin: 0;
+    font-size: 30px;
+    padding-bottom: 20px;
+    color: red;
+}
+
+#best_seller .sale {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.5;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid grey;
+}
+
+#best_seller img {
     width: 100%;
-    height: 3%;
+    height: 250px;
 }
-.origin{
+
+#best_seller .name {
+    margin: 0;
+}
+
+#best_seller .origin {
     opacity: 0.5;
     color: red;
     font-weight: bold;
     text-decoration: line-through;
-    float: left;
+    margin: auto;
 }
-.price{
-    float: right;
+
+#best_seller .price {
+    margin: auto;
 }
-#list_product{
+
+#best_seller .process-bar {
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #fddac8;
+    border-radius: 50px;
+}
+
+#best_seller .level {
+    width: 80%;
+    height: 30px;
+    border-radius: 50px;
+    background-color: orange;
+}
+
+#best_seller .text {
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: -8px;
+}
+
+/* danh sach san pham  */
+#list_product {
     float: right;
     width: 75%;
+}
+
+#list_product .grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 100%;
+}
+
+#list_product select {
+    height: 40px;
+    font-size: 15px;
+    margin-left: 75%;
+    margin-bottom: 20px;
+}
+
+.bgimgsub img {
+    width: 100%;
+    height: 200px;
+}
+
+.item {
+    overflow: hidden;
+    max-width:100%;
+    margin-left: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.name{
+    margin: auto;
+}
+.price{
+    margin: auto;
+    color: red;
+    font-weight: bold;
 }
 /* Lĩnh */

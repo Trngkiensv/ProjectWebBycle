@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thanh toán</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="pay.css">
+</head>
+
+<body>
+    <!-- Lĩnh -->
+    <div id="pay">
+        <div class="content">
+            <div class="container">
+                <div id="info">
+                    <h3>THÔNG TIN THANH TOÁN</h3>
+                    <div class="session fullname">
+                        <div class="fname">
+                            <p>Tên *</p>
+                            <input class="input-text" type="text">
+                        </div>
+                        <div class="lname">
+                            <p>Họ *</p>
+                            <input class="input-text" type="text">
+                        </div>
+                    </div>
+                    <div class="session">
+                        <p>Địa chỉ *</p>
+                        <input class="input-text" type="text">
+                    </div>
+                    <div class="session">
+                        <p>Tỉnh / Thành phố *</p>
+                        <input class="input-text" type="text">
+                    </div>
+                    <div class="session">
+                        <p>Sồ điện thoại *</p>
+                        <input class="input-text" type="tel">
+                    </div>
+                    <div class="session">
+                        <p>Email *</p>
+                        <input class="input-text" type="email">
+                    </div>
+                    <h3 class="note">THÔNG TIN BỔ SUNG</h3>
+                    <div class="session">
+                        <p>Ghi chú</p>
+                        <textarea name="" class="input-text" placeholder="Ghi chú về đơn hàng, ví dụ: thời gian hay chỉ dẫn địa điểm giao hàng chi tiết hơn"></textarea>
+                    </div>
+                </div>
+                <div id="order">
+                    <div class="container-order">
+                        <h3>ĐƠN HÀNG CỦA BẠN</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="left-text">SẢN PHẨM</th>
+                                    <th class="right-text">TẠM TÍNH</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="left-text">Tạm tính</td>
+                                    <td class="right-text">1000000đ</td>
+                                </tr>
+                                <tr>
+                                    <td class="left-text">Tổng</td>
+                                    <td class="right-text">1000000đ</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="payment-methods">
+                            <input type="radio" name="choice">
+                            <p>Chuyển khoản ngân hàng</p>
+                        </div>
+                        <div class="payment-methods">
+                            <input type="radio" name="choice">
+                            <p>Trả tiền mặt khi nhận hàng</p>
+                        </div>
+                        <button>ĐẶT HÀNG</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Lĩnh -->
+</body>
+
+</html>
