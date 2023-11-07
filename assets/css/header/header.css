@@ -1,3 +1,7 @@
+* {
+    font-family: Tahoma, Ariral, sans-serif;
+}
+
 body {
     background-color: gray;
 }
@@ -169,7 +173,10 @@ a {
 }
 
 .item:hover ~ .blur {
-    background-color: rgba(41, 41, 41, 0.558)
+    display: block;
+    z-index: 5;
+    background-color: rgba(41, 41, 41, 0.558);
+    transition: background-color 10s ease;
 }
 
 .list-item {
@@ -181,8 +188,9 @@ a {
     width: 100vw;
     height: 400vh;
     top: 100%;
-    left: -13%;
-    z-index: 5;
+    left: -15%;
+    z-index: -5;
+    display: none;
 }
 
 .item i {   
@@ -248,4 +256,12 @@ a {
 
 .header-bottom .list-item .item > a > p:not(.list-item .item:last-child a p) {
     border-right: 1px solid;
+}
+
+header .search-bar input {
+    font-size: 13px;
+}
+
+header .search-bar i {
+    font-size: 13px;
 }

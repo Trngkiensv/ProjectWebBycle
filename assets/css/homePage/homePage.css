@@ -1,5 +1,14 @@
+body {
+    background-color: rgb(255, 255, 255) !important;
+}
+
 * {
     font-family: Tahoma, Arial, sans-serif;
+}
+
+.tabs .container {
+    margin: 0;
+    padding: 0 100px;
 }
 
 .carousel-indicators .rounded-indicator {
@@ -21,7 +30,8 @@
 }
 
 .tabs .nav-tabs .nav-item .nav-link{
-    padding: 10px 150px;
+    box-sizing: border-box;
+    padding: 10px 104px;
     border: 1px solid black;
     font-weight: bolder;
     color: black;
@@ -63,4 +73,14 @@
 
 .carousel.slide.banner1 {
     z-index: 0;
+}
+
+#header-container {
+    z-index: 15;
+    position: sticky;
+    top: 0;
+}
+
+.tabs-container {
+    padding: 0 100px;
 }
