@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+* {
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.tabs .container {
+    margin: 0;
+    padding: 0 100px;
+}
+
+.carousel-indicators .rounded-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+    margin: 0 5px;
+    border: 2px solid #ffff;
+    background-color: #f0f8ff00;
+}
+
+.carousel-indicators .active {
+    background-color: #ffff !important;
+}
+
+.tabs .nav-tabs {
+    border: unset;
+    justify-content: space-between;
+}
+
+.tabs .nav-tabs .nav-item .nav-link{
+    box-sizing: border-box;
+    padding: 10px 104px;
+    border: 1px solid black;
+    font-weight: bolder;
+    color: black;
+    position: relative;
+}
+
+.tabs .nav-tabs .nav-item .nav-link.active{
+    background-color: black;
+    color: white;
+}
+
+.tabs .nav-tabs .nav-item .nav-link.active::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    display: block;
+    width: 25px;
+    height: 15px;
+    top: 100%;
+    left: 47%;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.card-title {
+    color: #db0075;
+}
+.card-text {
+    color: #17E6E6;
+}
+.list-inline-item {
+    color: #ffd700
+}
+.price {
+    color: #9B1B30;
+}
+.btn-pink {
+    background-color: #fcb2b2 !important;
+}
+
+.carousel.slide.banner1 {
+    z-index: 0;
+}
+
+#header-container {
+    z-index: 15;
+    position: sticky;
+    top: 0;
+}
+
+.tabs-container {
+    padding: 0 100px;
+}
