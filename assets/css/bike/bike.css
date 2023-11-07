@@ -109,18 +109,20 @@ body {
 
 .item {
     overflow: hidden;
-    max-width:100%;
+    max-width: 100%;
     margin-left: 20px;
     margin-bottom: 60px;
     text-align: center;
 }
 
-.name{
+.name {
     margin: auto;
 }
-.price{
+
+.price {
     margin: auto;
     color: red;
     font-weight: bold;
 }
+
 /* Lĩnh */
