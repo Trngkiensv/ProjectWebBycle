@@ -174,9 +174,10 @@ a {
 
 .item:hover ~ .blur {
     display: block;
-    z-index: 5;
+    width: 100vw;
+    height: 400vh;
     background-color: rgba(41, 41, 41, 0.558);
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s;
 }
 
 .list-item {
@@ -184,13 +185,12 @@ a {
 }
 
 .list-item .blur {
+    background-color: #77777700;
     position: absolute;
-    width: 100vw;
-    height: 400vh;
     top: 100%;
     left: -15%;
     z-index: -5;
-    display: none;
+    /* display: none; */
 }
 
 .item i {   
@@ -265,3 +265,16 @@ header .search-bar input {
 header .search-bar i {
     font-size: 13px;
 }
+
+.b {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: background-color 2s;
+  }
+  
+.b:hover {
+    width: 300px;
+    background-color: #fcb2b2;
+}
+
