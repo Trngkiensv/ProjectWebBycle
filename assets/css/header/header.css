@@ -158,17 +158,17 @@ a {
     background-color: #000000;
 }
 
-.item {
+header .item {
     display: inline-block;
     font-weight: bold;
     position: relative;
 }
 
-.item:hover > a {
+header .item:hover > a {
     color: aliceblue;
 }
 
-.item:hover .menu-1 {
+header .item:hover .menu-1 {
     display: block;
 }
 
@@ -180,7 +180,7 @@ a {
     transition: background-color 0.5s;
 }
 
-.list-item {
+header .list-item {
     position: relative;
 }
 
@@ -277,4 +277,3 @@ header .search-bar i {
     width: 300px;
     background-color: #fcb2b2;
 }
-
