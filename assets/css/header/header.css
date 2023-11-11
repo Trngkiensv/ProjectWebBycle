@@ -158,39 +158,39 @@ a {
     background-color: #000000;
 }
 
-.item {
+header .item {
     display: inline-block;
     font-weight: bold;
     position: relative;
 }
 
-.item:hover > a {
+header .item:hover > a {
     color: aliceblue;
 }
 
-.item:hover .menu-1 {
+header .item:hover .menu-1 {
     display: block;
 }
 
 .item:hover ~ .blur {
     display: block;
-    z-index: 5;
+    width: 100vw;
+    height: 400vh;
     background-color: rgba(41, 41, 41, 0.558);
-    transition: background-color 10s ease;
+    transition: background-color 0.5s;
 }
 
-.list-item {
+header .list-item {
     position: relative;
 }
 
 .list-item .blur {
+    background-color: #77777700;
     position: absolute;
-    width: 100vw;
-    height: 400vh;
     top: 100%;
     left: -15%;
     z-index: -5;
-    display: none;
+    /* display: none; */
 }
 
 .item i {   
@@ -264,4 +264,17 @@ header .search-bar input {
 
 header .search-bar i {
     font-size: 13px;
+}
+
+.b {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: background-color 2s;
+  }
+  
+.b:hover {
+    width: 300px;
+    background-color: #fcb2b2;
+    
 }

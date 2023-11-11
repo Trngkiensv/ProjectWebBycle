@@ -18,7 +18,7 @@
     <!-- begin header -->
     <div id="header-container"></div>
     <script>
-        var headerContainer = document.getElementById('header-container');  
+        var headerContainer = document.getElementById('header-container');
         var xhr = new XMLHttpRequest();
         xhr.open('GET', '../header/header.html', true);
         xhr.onreadystatechange = function () {
@@ -75,35 +75,429 @@
     <!-- Tabs -->
     <div class="tabs mt-5">
         <!-- Nav tabs -->
-        <div class="tabs-container">
+        <!-- <div class="tabs-container">
             <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link rounded-0 active " id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                        type="button" role="tab" aria-controls="home" aria-selected="true">KHUYẾN MÃI</button>
+                    <button class="nav-link rounded-0 active " id="sale" data-bs-toggle="tab" data-bs-target="#sale"
+                        type="button" role="tab" aria-controls="sale" aria-selected="true">KHUYẾN MÃI</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link rounded-0" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                        type="button" role="tab" aria-controls="profile" aria-selected="false">BÁN CHẠY</button>
+                    <button class="nav-link rounded-0" id="bestseller" data-bs-toggle="tab" data-bs-target="#bestseller"
+                        type="button" role="tab" aria-controls="bestseller" aria-selected="false">BÁN CHẠY</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link rounded-0" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages"
-                        type="button" role="tab" aria-controls="messages" aria-selected="false">SẢN PHẨM MỚI</button>
+                    <button class="nav-link rounded-0" id="new-prod" data-bs-toggle="tab" data-bs-target="#new-prod"
+                        type="button" role="tab" aria-controls="new-prod" aria-selected="false">SẢN PHẨM MỚI</button>
                 </li>
             </ul>
         </div>
-        <div class="tab-content">
-            <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        evve
+        <div class="tab-content mt-5">
+            <div class="tab-pane fade show active" id="sale" role="tabpanel" aria-labelledby="sale-tab">
+                <div class="tab-item-container">
+                    <ul class="tab-menu">
+                        <li class="tab-menu-item">
+                            <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                width="212px" height="170px">
+                            <div class="sale">-12%</div>
+                            <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                            <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                            <div class="price d-flex mt-2">
+                                <p class="prod-sale-price">4,600,000₫</p>
+                                <p class="prod-price">4,390,000₫</p>
+                            </div>
+                        </li>
+                        <li class="tab-menu-item">
+                            <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                width="212px" height="170px">
+                            <div class="sale">-12%</div>
+                            <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                            <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                            <div class="price d-flex mt-2">
+                                <p class="prod-sale-price">4,600,000₫</p>
+                                <p class="prod-price">4,390,000₫</p>
+                            </div>
+                        </li>
+                        <li class="tab-menu-item">
+                            <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                width="212px" height="170px">
+                            <div class="sale">-12%</div>
+                            <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                            <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                            <div class="price d-flex mt-2">
+                                <p class="prod-sale-price">4,600,000₫</p>
+                                <p class="prod-price">4,390,000₫</p>
+                            </div>
+                        </li>
+                        <li class="tab-menu-item">
+                            <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                width="212px" height="170px">
+                            <div class="sale">-12%</div>
+                            <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                            <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                            <div class="price d-flex mt-2">
+                                <p class="prod-sale-price">4,600,000₫</p>
+                                <p class="prod-price">4,390,000₫</p>
+                            </div>
+                        </li>
+                        <li class="tab-menu-item">
+                            <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                width="212px" height="170px">
+                            <div class="sale">-12%</div>
+                            <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                            <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                            <div class="price d-flex mt-2">
+                                <p class="prod-sale-price">4,600,000₫</p>
+                                <p class="prod-price">4,390,000₫</p>
+                            </div>
+                        </li>
+                        <li class="tab-menu-item">
+                            <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                width="212px" height="170px">
+                            <div class="sale">-12%</div>
+                            <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                            <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                            <div class="price d-flex mt-2">
+                                <p class="prod-sale-price">4,600,000₫</p>
+                                <p class="prod-price">4,390,000₫</p>
+                            </div>
+                        </li>
+                        <li class="tab-menu-item">
+                            <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                width="212px" height="170px">
+                            <div class="sale">-12%</div>
+                            <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                            <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                            <div class="price d-flex mt-2">
+                                <p class="prod-sale-price">4,600,000₫</p>
+                                <p class="prod-price">4,390,000₫</p>
+                            </div>
+                        </li>
+                        <li class="tab-menu-item">
+                            <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                width="212px" height="170px">
+                            <div class="sale">-12%</div>
+                            <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                            <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                            <div class="price d-flex mt-2">
+                                <p class="prod-sale-price">4,600,000₫</p>
+                                <p class="prod-price">4,390,000₫</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="bestseller" role="tabpanel" aria-labelledby="bestseller">
+                b
+            </div>
+            <div class="tab-pane fade" id="new-prod" role="tabpanel" aria-labelledby="new-prod">
+                c
+            </div>
+        </div> -->
+        <div class="tabs-container">
+            <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-0 active" id="sale-tab" data-bs-toggle="tab" data-bs-target="#sale-content"
+                        type="button" role="tab" aria-controls="sale-content" aria-selected="true">KHUYẾN MÃI</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-0" id="bestseller" data-bs-toggle="tab" data-bs-target="#bestseller-content"
+                        type="button" role="tab" aria-controls="bestseller-content" aria-selected="false">BÁN CHẠY</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link rounded-0" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages-content"
+                        type="button" role="tab" aria-controls="messages-content" aria-selected="false">SẢN PHẨM MỚI</button>
+                </li>
+            </ul>
+            <div class="tab-content mt-5">
+                <div class="tab-pane fade show active" id="sale-content" role="tabpanel">
+                    <div class="tab-item-container">
+                        <ul class="tab-menu">
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="bestseller-content" role="tabpanel">
+                    <div class="tab-item-container">
+                        <ul class="tab-menu">
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="messages-content" role="tabpanel">
+                    <div class="tab-item-container">
+                        <ul class="tab-menu">
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                            <li class="tab-menu-item">
+                                <img src="../assets/img/homePage/product/product-1.webp" alt="product" class="prod-img"
+                                    width="212px" height="170px">
+                                <div class="sale">-12%</div>
+                                <p class="prod-type mt-2">XE ĐẠP ĐỊA HÌNH</p>
+                                <p class="prod-name mt-2">Xe đạp thể thao Galaxy ML200 2023</p>
+                                <div class="price d-flex mt-2">
+                                    <p class="prod-sale-price">4,600,000₫</p>
+                                    <p class="prod-price">4,390,000₫</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <!-- Tabs -->
 
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/boostrap/js/bootstrap.min.js"></script>
     <div class="product-slider">
-        <div class="container">
-            fsefes
-        </div>
     </div>
 
 </body>
