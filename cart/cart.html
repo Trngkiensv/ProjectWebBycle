@@ -61,14 +61,12 @@
                                     <tr class="woocommerce-cart-form__cart-item cart_item">
 
                                         <td class="product-remove">
-                                            <a href=""
-                                                class="remove" aria-label="Xóa sản phẩm này" data-product_id="20587"
-                                                data-product_sku="">×</a>
+                                            <a href="" class="remove" aria-label="Xóa sản phẩm này"
+                                                data-product_id="20587" data-product_sku="">×</a>
                                         </td>
 
                                         <td class="product-thumbnail">
-                                            <a href=""><img
-                                                    decoding="async" width="75.6" height="60.6"
+                                            <a href=""><img decoding="async" width="75.6" height="60.6"
                                                     src="../assets/img/cart/item1.webp"
                                                     class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
                                                     alt=""></a>
@@ -78,7 +76,7 @@
                                             <a href="">Xe
                                                 đạp
                                                 thể thao Farlleri F4</a>
-                                            
+
                                         </td>
 
                                         <td class="product-price" data-title="Giá">
@@ -88,10 +86,12 @@
 
                                         <td class="product-quantity" data-title="Số lượng">
                                             <div class="quantity buttons_added">
-                                                <input type="button" value="-" class="minus button is-form"><input type="number" id="quantity_654c5cccca134"
+                                                <input type="button" value="-" class="minus button is-form"><input
+                                                    type="number" id="quantity_654c5cccca134"
                                                     class="input-text qty text" step="1" min="0" max=""
                                                     name="cart[402d34fc07781a8932b7fac0c3bf3cc2][qty]" value="3"
-                                                    title="SL" size="4" placeholder="" inputmode="numeric"><input type="button" value="+" class="plus button is-form">
+                                                    title="SL" size="4" placeholder="" inputmode="numeric"><input
+                                                    type="button" value="+" class="plus button is-form">
                                             </div>
                                         </td>
 
@@ -175,8 +175,7 @@
 
                             <div class="wc-proceed-to-checkout mt-3">
 
-                                <a href=""
-                                    class="checkout-button button alt wc-forward">
+                                <a href="" class="checkout-button button alt wc-forward">
                                     Tiến hành thanh toán</a>
                             </div>
 
@@ -184,8 +183,8 @@
                         </div>
                         <form class="checkout_coupon mb-0 mt-3" method="post">
                             <div class="coupon">
-                                <h3 class="widget-title"><i class="bi bi-tag-fill"></i>  Phiếu ưu đãi</h3><input type="text"
-                                    name="coupon_code" class="input-text mt-3" id="coupon_code" value=""
+                                <h3 class="widget-title"><i class="bi bi-tag-fill"></i> Phiếu ưu đãi</h3><input
+                                    type="text" name="coupon_code" class="input-text mt-3" id="coupon_code" value=""
                                     placeholder="Mã ưu đãi">
                                 <input type="submit" class="is-form expand mt-3" name="apply_coupon" value="Áp dụng">
                             </div>
@@ -197,7 +196,21 @@
             </div>
 
             <script src="../assets/boostrap/js/bootstrap.min.js"></script>
+        </div>
+    </div>
+    <div id="footer-container"></div>
+    <script>
+        var footerContainer = document.getElementById('footer-container');
+        var xhr2 = new XMLHttpRequest();
+        xhr2.open('GET', '../footer/footer.html', true);
+        xhr2.onreadystatechange = function () {
+            if (xhr2.readyState === 4 && xhr2.status === 200) {
+                footerContainer.innerHTML = xhr2.responseText; // Fix: Use footerContainer, not headerContainer
+            }
+        };
+        xhr2.send();
+    </script>
+    
 </body>
 
 </html>
-<div class="vrnvrve"></div>
