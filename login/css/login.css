@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+ 
+}
+form {
+    border: 3px solid green;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+
+   
+}
+.head_login{
+    margin-left: 45%;
+    color: rgb(2, 67, 2);
+    font-size: 22px;
+}
+.h3{
+   margin-left: 20%;
+}
+
+input[type=text], input[type=password] {
+  
+  width: 100%;
+  max-width: 600px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius:  solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+ 
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+.container {
+  max-width: 600px;
+  padding: 16px;
+
+}
+.footer{
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px;
+    padding-top: -10px;
+    padding-bottom: 16px;
+
+    
+
+}
+a{
+    color: #5fb861;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(212, 102, 102);
+
+}
