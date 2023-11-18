@@ -499,7 +499,20 @@
     <script src="../assets/boostrap/js/bootstrap.min.js"></script>
     <div class="product-slider">
     </div>
-
+    <!-- begin footer -->
+    <div id="footer-container"></div>
+    <script>
+        var footerContainer = document.getElementById('footer-container');
+        var xhr2 = new XMLHttpRequest();
+        xhr2.open('GET', '../footer/footer.html', true);
+        xhr2.onreadystatechange = function () {
+            if (xhr2.readyState === 4 && xhr2.status === 200) {
+                footerContainer.innerHTML = xhr2.responseText; // Fix: Use footerContainer, not headerContainer
+            }
+        };
+        xhr2.send();
+    </script>
+    <!-- end footer -->
 </body>
 
 </html>

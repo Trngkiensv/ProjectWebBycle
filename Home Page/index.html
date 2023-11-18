@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="../assets/boostrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/homePage/homePage.css">
     <!-- header link -->
-    <link rel="stylesheet" href="../assets/css/header/reset.css">
+    <!-- <link rel="stylesheet" href="../assets/css/header/reset.css">
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../assets/css/header/header.css">
+    <link rel="stylesheet" href="../assets/css/header/header.css"> -->
 </head>
 
 <body>
@@ -499,7 +499,18 @@
     <script src="../assets/boostrap/js/bootstrap.min.js"></script>
     <div class="product-slider">
     </div>
-
+    <div id="footer-container"></div>
+    <script>
+        var footerContainer = document.getElementById('footer-container');
+        var xhr2 = new XMLHttpRequest();
+        xhr2.open('GET', '../footer/footer.html', true);
+        xhr2.onreadystatechange = function () {
+            if (xhr2.readyState === 4 && xhr2.status === 200) {
+                footerContainer.innerHTML = xhr2.responseText; // Fix: Use footerContainer, not headerContainer
+            }
+        };
+        xhr2.send();
+    </script>
 </body>
 
 </html>

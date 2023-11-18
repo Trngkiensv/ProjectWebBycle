@@ -1,86 +1,86 @@
 /* Reset css */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+header html,
+header body,
+header header div,
+header span,
+header applet,
+header object,
+header iframe,
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6,
+header p,
+header blockquote,
+header pre,
+header a,
+header abbr,
+header acronym,
+header address,
+header big,
+header cite,
+header code,
+header del,
+header dfn,
+header em,
+header img,
+header ins,
+header kbd,
+header q,
+header s,
+header samp,
+header small,
+header strike,
+header strong,
+header sub,
+header sup,
+header tt,
+header var,
+header b,
+header u,
+header i,
+header center,
+header dl,
+header dt,
+header dd,
+header ol,
+header ul,
+header li,
+header fieldset,
+header form,
+header label,
+header legend,
+header table,
+header caption,
+header tbody,
+header tfoot,
+header thead,
+header tr,
+header th,
+header td,
+header article,
+header aside,
+header canvas,
+header details,
+header embed,
+header figure,
+header figcaption,
+header footer,
+header header,
+header hgroup,
+header menu,
+header nav,
+header output,
+header ruby,
+header section,
+header summary,
+header time,
+header mark,
+header audio,
+header video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -91,49 +91,49 @@ video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+header article,
+header aside,
+header details,
+header figcaption,
+header figure,
+header footer,
+header header,
+header hgroup,
+header menu,
+header nav,
+header section {
   display: block;
 }
 
-body {
+header body {
   line-height: 1;
 }
 
-ol,
-ul {
+header ol,
+header ul {
   list-style: none;
 }
 
-blockquote,
-q {
+header blockquote,
+header q {
   quotes: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+header blockquote:before,
+header blockquote:after,
+header q:before,
+header q:after {
   content: '';
   content: none;
 }
 
-table {
+header table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* End reset css */
 
-* {
+header * {
   font-family: Tahoam, Arial, sans-serif;
 }
