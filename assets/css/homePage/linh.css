@@ -3,9 +3,15 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.linh .container {
+.container {
     padding-left: 300px;
     padding-right: 300px;
+    max-width: unset;
+    --bs-gutter-x: unset;
+    --bs-gutter-y: unset;
+    width: unset;
+    margin-right: unset;
+    margin-left: unset;
 }
 
 #Mountain_bike {
@@ -50,7 +56,7 @@ body {
     width: 100%;
 }
 
-.linh .list {
+.list {
     overflow: auto;
     float: right;
     width: 70%;
@@ -64,18 +70,20 @@ body {
     height: 200px;
 }
 
-.linh .item {
+.item {
     margin-left: 20px;
 }
 
-.linh .price {
+.price {
     margin: auto;
     color: red;
     font-weight: bold;
     text-align: center;
 }
-
-.linh .name {
+.product{
+    display: flex;
+}
+.name {
     margin: auto;
     text-align: center;
 }
@@ -105,32 +113,22 @@ body {
     width: 25%;
 }
 
-.linh .advise {
+.advise {
     width: 25%;
 }
 
-.linh .header {
-    background-color: #ececec;
-    margin-right: 20px;
-    padding: 5px;
-    padding-left: 20px;
-    margin-top: 30px;
-    border-left: 5px red solid;
-    font-weight: bold;
-}
-
-.linh .info {
+.info {
     margin-top: 20px;
     display: flex;
 }
 
-.linh .info img {
+.info img {
     padding-right: 10px;
     width: 80px;
     height: 80px;
 }
 
-.linh .info a {
+.info a {
     text-decoration: none;
     color: black;
     padding-right: 20px;
