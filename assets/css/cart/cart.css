@@ -15,6 +15,10 @@ body {
     padding: 0 100px;
 }
 
+.checkout-page-title a, .cart-container a {
+    text-decoration: none;
+}
+
 .checkout-page-title a {
     color:  black;
     text-transform: uppercase;
@@ -37,6 +41,9 @@ body {
     color: rgb(92, 92, 92);
     font-weight: bold;
     padding: 15px 15px;
+    border-color: unset;
+    border-style: unset;
+    border-width: unset;
 }
 
 .cart-container table thead tr {
@@ -142,7 +149,7 @@ body {
     font-weight: bold;
     color: white;
     background-color: #666666;
-    padding: 12px 10px;
+    padding: 8px 10px;
 }
 
 .cart-container .cart tr td.clear .pull-left {

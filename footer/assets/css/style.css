@@ -174,3 +174,9 @@ footer h3{
 footer .grid__rowa {
     background-color: #fff;
 }
+/* cái này là để header dính lên top */
+#header-container {
+    z-index: 15;
+    position: sticky;
+    top: 0;
+  }
