@@ -6,6 +6,12 @@ body {
 .container {
     padding-left: 300px;
     padding-right: 300px;
+    max-width: unset;
+    --bs-gutter-x: unset;
+    --bs-gutter-y: unset;
+    width: unset;
+    margin-right: unset;
+    margin-left: unset;
 }
 
 #Mountain_bike {
@@ -74,7 +80,9 @@ body {
     font-weight: bold;
     text-align: center;
 }
-
+.product{
+    display: flex;
+}
 .name {
     margin: auto;
     text-align: center;
@@ -107,16 +115,6 @@ body {
 
 .advise {
     width: 25%;
-}
-
-.header {
-    background-color: #ececec;
-    margin-right: 20px;
-    padding: 5px;
-    padding-left: 20px;
-    margin-top: 30px;
-    border-left: 5px red solid;
-    font-weight: bold;
 }
 
 .info {
