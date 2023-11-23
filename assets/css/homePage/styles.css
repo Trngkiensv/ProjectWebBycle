@@ -1,0 +1,21 @@
+/* begin main css */
+.Mcontainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+div, body {
+    padding: unset;
+    margin: unset;
+}
+
+:root {
+    --primary-color: rgb(0, 68, 255);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+
+}
+/* end main css */
+
