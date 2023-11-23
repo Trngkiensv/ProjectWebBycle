@@ -9,6 +9,23 @@
 </head>
 
 <body>
+<<<<<<< HEAD
+=======
+    <!-- begin header -->
+    <div id="header-container"></div>
+    <script>
+        var headerContainer = document.getElementById('header-container');
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '../header/header.html', true);
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                headerContainer.innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+    </script>
+    <!-- end header -->
+>>>>>>> main
     <!-- Lĩnh -->
     <div id="page">
         <div class="container">
@@ -25,12 +42,21 @@
                 </div>
             </div>
             <div id="list_product">
+<<<<<<< HEAD
                 <select name="" id="select">
                     <option value="option1">Thứ tự theo mức độ phổ biến</option>
                     <option value="option2">Thứ tự theo điểm đánh giá</option>
                     <option value="option3">Mới nhất</option>
                     <option value="option4">Theo thứ tự giá: Từ thấp dến cao</option>
                     <option value="option5">Theo thứ tự giá: Từ cao dến thấp</option>
+=======
+                <select name="" id="">
+                    <option value="">Thứ tự theo mức độ phổ biến</option>
+                    <option value="">Thứ tự theo điểm đánh giá</option>
+                    <option value="">Mới nhất</option>
+                    <option value="">Theo thứ tự giá: Từ thấp dến cao</option>
+                    <option value="">Theo thứ tự giá: Từ cao dến thấp</option>
+>>>>>>> main
                 </select>
                 <div class="grid">
                     <div class="item race">
@@ -39,7 +65,11 @@
                                     src="../assets/img/product.webp" alt=""></a>
                         </div>
                         <p class="name">Xe đạp địa hình DKALN XL666S có baga</p>
+<<<<<<< HEAD
                         <p class="price">15000</p>
+=======
+                        <p class="price">as </p>
+>>>>>>> main
                     </div>
                     <div class="item race">
                         <div class="bgimgsub">
@@ -47,7 +77,11 @@
                                     src="../assets/img/product.webp" alt=""></a>
                         </div>
                         <p class="name">Xe đạp địa hình DKALN XL666S có baga</p>
+<<<<<<< HEAD
                         <p class="price">1400</p>
+=======
+                        <p class="price">as </p>
+>>>>>>> main
                     </div>
                     <div class="item race">
                         <div class="bgimgsub">
@@ -55,13 +89,38 @@
                                     src="../assets/img/product.webp" alt=""></a>
                         </div>
                         <p class="name">Xe đạp địa hình DKALN XL666S có baga</p>
+<<<<<<< HEAD
                         <p class="price">20000</p>
                     </div>
+=======
+                        <p class="price">as </p>
+                    </div>
+                    
+>>>>>>> main
                 </div>
             </div>
         </div>
     </div>
+<<<<<<< HEAD
 </body>
 <!-- Lĩnh -->
+=======
+    <!-- Lĩnh -->
+    <!-- begin footer -->
+    <div id="footer-container"></div>
+    <script>
+        var footerContainer = document.getElementById('footer-container');
+        var xhr2 = new XMLHttpRequest();
+        xhr2.open('GET', '../footer/footer.html', true);
+        xhr2.onreadystatechange = function () {
+            if (xhr2.readyState === 4 && xhr2.status === 200) {
+                footerContainer.innerHTML = xhr2.responseText; // Fix: Use footerContainer, not headerContainer
+            }
+        };
+        xhr2.send();
+    </script>
+    <!-- end footer -->
+</body>
+>>>>>>> main
 
 </html>

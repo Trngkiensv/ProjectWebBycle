@@ -6,15 +6,12 @@ body {
 .container {
     padding-left: 300px;
     padding-right: 300px;
-<<<<<<< HEAD
-=======
     max-width: unset;
     --bs-gutter-x: unset;
     --bs-gutter-y: unset;
     width: unset;
     margin-right: unset;
     margin-left: unset;
->>>>>>> main
 }
 
 #Mountain_bike {

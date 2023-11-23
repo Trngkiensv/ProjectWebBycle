@@ -279,3 +279,10 @@ header .b:hover {
     background-color: #fcb2b2;
     
 }
+
+/* cái này là để header dính lên top */
+#header-container {
+    z-index: 15;
+    position: sticky;
+    top: 0;
+}

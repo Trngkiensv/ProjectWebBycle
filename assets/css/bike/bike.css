@@ -1,17 +1,40 @@
 /* Lĩnh */
 body {
     font-family: Arial, Helvetica, sans-serif;
+<<<<<<< HEAD
 }
 
 .container {
+=======
+    margin: 0;
+}
+
+#footer-container {
+    display: inline-block;
+}
+
+#page .container {
+>>>>>>> main
     padding-left: 300px;
     padding-right: 300px;
 }
 
+<<<<<<< HEAD
 .page {
     display: flex;
 }
 
+=======
+#page .page {
+    display: flex;
+}
+
+#page {
+    display: inline-block;
+    background-color: #fff;
+}
+
+>>>>>>> main
 /* san pham tieu bieu */
 #best_seller {
     float: left;
@@ -102,12 +125,20 @@ body {
     margin-bottom: 20px;
 }
 
+<<<<<<< HEAD
 .bgimgsub img {
+=======
+#page .bgimgsub img {
+>>>>>>> main
     width: 100%;
     height: 200px;
 }
 
+<<<<<<< HEAD
 .item {
+=======
+#page .item {
+>>>>>>> main
     overflow: hidden;
     max-width: 100%;
     margin-left: 20px;
@@ -115,11 +146,19 @@ body {
     text-align: center;
 }
 
+<<<<<<< HEAD
 .name {
     margin: auto;
 }
 
 .price {
+=======
+#page .name {
+    margin: auto;
+}
+
+#page .price {
+>>>>>>> main
     margin: auto;
     color: red;
     font-weight: bold;
