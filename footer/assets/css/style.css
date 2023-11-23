@@ -1,18 +1,18 @@
-body{
+footer body{
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
 }
-.footer  {
+footer .footer  {
     width: 100%;
 
 }
 
-.grid{
+footer .grid{
     width: 100%;
     max-width: 100%;
-    height: 745px;
+    /* height: 745px; */
     margin: 0 auto;
     display: grid;
     grid-template-rows: 1fr 1fr 0.5fr;
@@ -20,14 +20,15 @@ body{
 
 
 }
-.grid__rowb{
+
+footer .grid__rowb{
     background-color: #494949;
 }
-.grid__rowc{
+footer .grid__rowc{
     background-color: #181616;
 }
 
-.grid__columna{
+footer .grid__columna{
 
   margin: 0 auto;
   display: grid;
@@ -38,7 +39,7 @@ body{
   
 
 }
-.grid__columnb{
+footer .grid__columnb{
     padding-top: 3%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -49,7 +50,7 @@ body{
     margin-right: 10%;
     
 }
-.grid__columnc{
+footer .grid__columnc{
     padding-top: 1%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -60,15 +61,15 @@ body{
 
 
 
-.grid__columnb .footer-list{
+footer .grid__columnb .footer-list{
     padding-left: 0;
     padding-right: 40px;
 }
-.grid__columnc .footer-list{
+footer .grid__columnc .footer-list{
     padding-left: 0;
   
 }
-.grid__columnc .footer_small-lista{
+footer .grid__columnc .footer_small-lista{
    margin-left: -2%;
  width: 100%;
 
@@ -81,7 +82,7 @@ padding-left: 0;
 
 
 }
-.grid__columnc .footer_small-listb{
+footer .grid__columnc .footer_small-listb{
 
 width: 100%;
 font-size: 12px;
@@ -90,56 +91,56 @@ padding-left: 0;
  
  
  }
-.grid__columnc .footer_small-lista li.footer-item{
+footer .grid__columnc .footer_small-lista li.footer-item{
     padding-left: 2%;
    
 
 }
-.grid__columnc .footer_small-lista li.footer-item a.footer-item__link{
+footer .grid__columnc .footer_small-lista li.footer-item a.footer-item__link{
  
   
     color: #757a6c;
 
 }
 
-.grid__columnc .footer_small-listb li.footer-item a.footer-item__link{
+footer .grid__columnc .footer_small-listb li.footer-item a.footer-item__link{
  
     text-decoration:none;
     color: #91917f;
 
 }
-.banking{
+footer .banking{
     text-align: right;
 }
-img.banking{
+footer img.banking{
     width: 50%;
 }
 
 
-.footer-heading__div{
+footer .footer-heading__div{
    
 }
-.footer-heading{
+footer .footer-heading{
     padding-bottom: 4%;
 }
-.footer-list{
+footer .footer-list{
     list-style: none;
     margin-top: 0;
    
     
  
 }
-.connect-us{
+footer .connect-us{
     padding-left: 1%;
 }
-.rectangle__grey{
+footer .rectangle__grey{
     width: 15%;
     border-bottom: 3px solid #e5e5e5;
     margin-bottom: 4%;
     
   
 }
-.grid__columnb .footer-item{
+footer .grid__columnb .footer-item{
     /**/
     width: 100%;
     text-decoration: none;
@@ -149,7 +150,7 @@ img.banking{
     display: inline-block; /* Đảm bảo rằng đường gạch ngang chỉ bao trùm chữ, không bao trùm toàn bộ dòng */
     margin-top: 0;
 }
-.grid__columna .footer-item__link{
+footer .grid__columna .footer-item__link{
     width: 100%;
     text-decoration: none;
     border-bottom: 1px solid #e5e5e5; /* Tạo đường gạch ngang dưới chữ */
@@ -159,13 +160,23 @@ img.banking{
     margin-top: 0;
     color: #757a6c;
 }
-.grid__columnb .footer-item__link {
+footer .grid__columnb .footer-item__link {
 color: white;
 text-decoration: none;
 }
 
 
-h3{
+footer h3{
     margin: 0;
 
 }
+
+footer .grid__rowa {
+    background-color: #fff;
+}
+/* cái này là để header dính lên top */
+/* #header-container {
+    z-index: 15;
+    position: sticky;
+    top: 0;
+} */
