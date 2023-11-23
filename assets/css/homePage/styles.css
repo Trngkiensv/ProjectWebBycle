@@ -19,3 +19,82 @@ div, body {
 }
 /* end main css */
 
+/* begin kien */
+a {
+    text-decoration: none;
+}
+
+.header-page {
+    background-color: #fff;
+}
+.header-page .header-top {
+    padding: 12px 0;
+    position: relative;
+}
+
+
+.header-page .header-top .search-form, .header-page .header-top .logo-wrap, .header-page .header-top .logo-wrap a, .header-page .header-bottom .navigation, .header-page .header-bottom #menu-menu-chinh, .header-page .header-bottom .menu-item {
+    display: inline-block;
+}
+
+.header-page .header-top .search-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-page .header-top .search-form *, .header-page .header-bottom * {
+    margin: unset;
+    padding: unset;
+    border: unset;
+}
+
+.header-page .header-top .search-form fieldset {
+    background-color: #f2f2f2;
+    border-radius: 999px;
+}
+
+.header-page .header-top .search-form fieldset input {
+    background-color: #ffffff00;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.header-page .header-top .search-form fieldset .btn-contain {
+    padding: 15px 25px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-page .header-bottom .menu-item {
+    position: relative;
+}
+
+.header-page .header-bottom #menu-menu-chinh > li a{
+    display: inline-block;
+    width: 162px;
+    text-align: center;
+}
+
+
+.header-page .header-bottom .sub-menu {
+    position: absolute;
+    display: none;
+}
+
+.header-page .navigation {
+    padding: 0 100px;
+}
+
+.header-page .header-bottom .menu-item a {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.header-page .header-bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+/* end kien */
