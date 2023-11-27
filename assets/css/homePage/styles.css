@@ -120,6 +120,24 @@ a {
     background-color: #ffffff00;
     font-weight: 400;
     font-size: 17px;
+    width: 270px;
+}
+
+.header-page .header-top .search-form fieldset button {
+    width: 25px;
+    cursor: pointer;
+}
+
+.header-page .header-top .search-form fieldset button i {
+    font-size: 17px;
+}
+
+.header-page .header-top .search-form fieldset input:focus-visible {
+    outline: none;
+}
+
+.header-page .header-top .search-form fieldset input:active {
+    outline: none;
 }
 
 .header-page .header-top .search-form fieldset .btn-contain {
@@ -133,20 +151,33 @@ a {
     position: relative;
 }
 
-.header-page .header-bottom #menu-menu-chinh > li a{
+.header-page .header-bottom #menu-menu-chinh > .menu-item:not(.header-page .header-bottom #menu-menu-chinh > .icon) > a{
     display: inline-block;
-    width: 162px;
+    width: 130px;
     text-align: center;
+    color: black;
 }
 
+.header-page .header-bottom #menu-menu-chinh > .icon a{
+    text-align: center;
+    color: black;
+}
+
+.header-page .header-bottom .menu > .menu-item > a {
+    padding: 15px 20px;
+}
+
+.header-page .header-bottom #menu-menu-chinh > .menu-item a:hover {
+    color: var(--primary-color) !important;
+}
+
+.header-page .header-bottom #menu-menu-chinh > .menu-item:hover .sub-menu{
+    display: block;
+}
 
 .header-page .header-bottom .sub-menu {
     position: absolute;
     display: none;
-}
-
-.header-page .navigation {
-    padding: 0 100px;
 }
 
 .header-page .header-bottom .menu-item a {
@@ -158,5 +189,20 @@ a {
 .header-page .header-bottom {
     display: flex;
     justify-content: space-evenly;
+}
+.header-page .header-bottom .menu-item .sub-menu {
+    background: #fff;
+
+}
+
+.header-page .header-bottom .menu-item .sub-menu .menu-item a {
+    display: inline-block;
+    padding: 15px 20px;
+    width: 230px;
+    color: #000;
+}
+
+body {
+    background: #000;
 }
 /* end kien */
