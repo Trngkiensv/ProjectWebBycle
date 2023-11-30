@@ -27,6 +27,7 @@ body {
 .page {
     background-color: #f7f7f7;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .page .navigation {
@@ -124,4 +125,98 @@ body {
 
 /* end css w3s */
 
+.page .products {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: unset;
+    justify-content: space-between;
+}
+
+.page .products .product-item {
+    display: inline-block;
+    background-color: white;
+    width: 384px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.page .products .product-item .item {
+    display: inline-block;
+    width: 100%;
+}
+
+.page .products .product-item .item img {
+    padding: 15px 30px;
+}
+
+.page .products .product-item .item .product-name {
+    margin: 8px 38px;
+    padding-top: 10px;
+    border-top: 1px solid var(--grid_content--color);
+    font-size: 15px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.page .products .product-item .item span {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.page .products .product-item .select_colorpicker {
+    padding-bottom: 20px;
+}
+
+.page .products .product-item .select_colorpicker .select_option {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--grid_content--color);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.page .products .product-item .select_colorpicker .select_option:hover {
+    
+    border: 1px solid black;
+}
+
+.page .products .product-item .select_colorpicker .select_option span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+
+.page .pagination .page-numbers {
+    list-style-type: none;
+    padding: unset;
+}
+
+.page .pagination .page-numbers li {
+    display: inline-block;
+    background-color: black;
+    border-radius: 10%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.page .pagination .page-numbers li span.current {
+    border-radius: 10%;
+    background-color: var(--primary-color);
+}
+
+.page .pagination .page-numbers li * {
+    font-size: 16px;
+    color: white;
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    padding: 9px;
+    box-sizing: border-box;
+}
 /* end kien */
