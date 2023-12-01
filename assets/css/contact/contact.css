@@ -48,5 +48,94 @@ body {
 
 .page .contact-bg {
     background-color: var(--primary-color);
+    padding: 40px 0;
+}
+
+.page .contact-bg .Mcontainer * {
+    padding: unset;
+    margin: unset;
+}
+
+.page .contact-bg .contact-infor .infor a i, .page .contact-bg .contact-infor .list, .page .contact-bg .contact-infor .detail {
+    color: white;
+    font-size: 21px;
+}
+
+.page .contact-bg .contact-infor .detail {
+    display: inline-block;
+}
+
+.page .contact-bg .contact-infor .list {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.page .contact-bg .contact-infor .infor:not(.page .contact-bg .contact-infor .infor:last-child) {
+    margin-bottom: 50px;
+}
+
+.page .contact-bg .contact-infor .icon {
+    margin-right: 10px;
+}
+
+.page .contact-bg .contact-infor .detail {
+    margin-top: 10px;
+}
+
+.page .contact-bg .contact-container {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.page .contact-bg .contact-container .form-contact {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 6px 4px 10px 0px;
+}
+
+.page .contact-bg .contact-container .form-contact form {
+    text-align: center;
+}
+
+.page .contact-bg .contact-container .form-contact .title {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.page .contact-bg .contact-container .form-contact label {
+    color: black;
+}
+
+.page .contact-bg .contact-container .form-contact input, .page .contact-bg .contact-container .form-contact textarea {
+    border: unset;
+    border-bottom: 2px solid var(--grid_content--color);
+    resize: none;
+    font-size: 16px;
+    text-indent: 5px;
+    margin-top: 20px;
+    width: 300px;
+}
+
+.page .contact-bg .contact-container .form-contact input:focus,  .page .contact-bg .contact-container .form-contact textarea {
+    outline: unset;
+}
+
+.page .contact-bg .contact-container .form-contact button {
+    float: left;
+    background-color: var(--primary-color);
+    width: 100px;
+    height: 30px;
+    border: unset;
+    border: 1px solid var(--grid_content--color);
+    margin-top: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.page .contact-bg .contact-container .form-contact button:hover {
+    
+    background-color: #001c67;
 }
 /* end contact page */
