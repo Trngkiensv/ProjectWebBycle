@@ -62,7 +62,7 @@ body {
 .custom-select {
     position: relative;
     border: 1px solid var(--grid_content--color);
-    width: 370px;
+    width: 383px;
 }
 
 .custom-select select {
@@ -130,6 +130,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: unset;
+    margin-top: 40px;
     justify-content: space-between;
 }
 
