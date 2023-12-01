@@ -1,0 +1,223 @@
+/* begin main css */
+.Mcontainer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+div,
+body {
+    padding: unset;
+    margin: unset;
+
+}
+
+:root {
+    --primary-color: rgb(0, 68, 255);
+    --footer--color: #242729;
+    --grid_content--color: #a0a0a0;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+/* end main css */
+/* begin kien */
+.page {
+    background-color: #f7f7f7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.page .navigation {
+    font-size: 14px;
+    font-weight: 400;
+    color: #a0a0a0;
+}
+
+.page .navigation a {
+    color: black;
+}
+
+.page .page-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.page .filter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.page .filter h3 {
+    display: none;
+}
+
+.page .filter .widget form {
+    position: relative;
+}
+
+/* begin css for select w3s */
+.custom-select {
+    position: relative;
+    border: 1px solid var(--grid_content--color);
+    width: 383px;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background-color: transparent;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: var(--grid_content--color) transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent var(--grid_content--color) transparent;
+    top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+    color: black;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* end css w3s */
+
+.page .products {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: unset;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.page .products .product-item {
+    display: inline-block;
+    background-color: white;
+    width: 384px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.page .products .product-item .item {
+    display: inline-block;
+    width: 100%;
+}
+
+.page .products .product-item .item img {
+    padding: 15px 30px;
+}
+
+.page .products .product-item .item .product-name {
+    margin: 8px 38px;
+    padding-top: 10px;
+    border-top: 1px solid var(--grid_content--color);
+    font-size: 15px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.page .products .product-item .item span {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.page .products .product-item .select_colorpicker {
+    padding-bottom: 20px;
+}
+
+.page .products .product-item .select_colorpicker .select_option {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid var(--grid_content--color);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.page .products .product-item .select_colorpicker .select_option:hover {
+    
+    border: 1px solid black;
+}
+
+.page .products .product-item .select_colorpicker .select_option span {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+
+.page .pagination .page-numbers {
+    list-style-type: none;
+    padding: unset;
+}
+
+.page .pagination .page-numbers li {
+    display: inline-block;
+    background-color: black;
+    border-radius: 10%;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.page .pagination .page-numbers li span.current {
+    border-radius: 10%;
+    background-color: var(--primary-color);
+}
+
+.page .pagination .page-numbers li * {
+    font-size: 16px;
+    color: white;
+    height: 36px;
+    width: 36px;
+    display: inline-block;
+    padding: 9px;
+    box-sizing: border-box;
+}
+/* end kien */
