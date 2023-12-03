@@ -1,140 +1,162 @@
-/* Lĩnh */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
 .container {
     padding-left: 300px;
     padding-right: 300px;
-<<<<<<< HEAD
-=======
     max-width: unset;
     --bs-gutter-x: unset;
     --bs-gutter-y: unset;
     width: unset;
     margin-right: unset;
     margin-left: unset;
->>>>>>> main
 }
 
-#Mountain_bike {
-    height: 400px;
-    background-color: #ececec;
+:root {
+    --bg-color: #f4f4f4;
+    --product-title-color: #444;
+    --text-color: #333;
+    --li-color: #fff;
 }
 
-#City_bike {
-    height: 400px;
-    background-color: white;
+/* begin Lĩnh */
+
+/* begin product */
+#universal_bike {
+    background-image: url(../img/homePage/bguniversalbike.webp);
+    padding: 110px 0px;
+    height: 270px;
 }
 
-#Race_bike {
-    height: 400px;
-    background-color: #ececec;
+#sport_bike {
+    background-image: url(../img/homePage/bgsportbike.webp);
+    padding: 110px 0px;
+    height: 270px;
 }
 
-#Children_bike {
-    height: 400px;
-    background-color: white;
+#children_bike {
+    background-image: url(../img/homePage/bgchildrenbike.webp);
+    padding: 110px 0px;
+    height: 270px;
 }
 
-#Fold_bike {
-    height: 400px;
-    background-color: #ececec;
-}
-
-/* tiêu đề */
-.title {
-    color: red;
-    margin: 30px 0px 20px;
-}
-
-.topic {
-    float: left;
-    width: 30%;
-    text-align: center;
+#children_bike .right-content,
+.right-content {
+    width: 50%;
+    float: right;
     height: 100%;
 }
 
-.topic img {
-    width: 100%;
-}
-
-.list {
-    overflow: auto;
-    float: right;
-    width: 70%;
-    display: flex;
-    margin-bottom: 40px;
-    padding-top: 30px;
-}
-
-.bgimgsub img {
-    width: 280px;
-    height: 200px;
-}
-
-.item {
-    margin-left: 20px;
-}
-
-.price {
-    margin: auto;
-    color: red;
-    font-weight: bold;
-    text-align: center;
-}
-.product{
-    display: flex;
-}
-.name {
-    margin: auto;
-    text-align: center;
-}
-
-.change.page {
-    text-align: center;
-}
-
-.change.page a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-/* introduce */
-.subsection {
-    width: 100%;
-    display: flex;
-}
-
-.advertisement {
+#sport_bike .left-content {
     width: 50%;
+    float: left;
 }
 
-.qaa {
-    width: 25%;
+#sport_bike h3,
+#children_bike h3,
+#universal_bike h3 {
+    margin: auto;
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--text-color);
 }
 
-.advise {
-    width: 25%;
+#sport_bike a,
+#children_bike a,
+#universal_bike a {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    border-bottom: 2px solid red;
+    color: var(--text-color);
 }
 
-.info {
-    margin-top: 20px;
+#sport_bike p,
+#children_bike p,
+#universal_bike p {
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--text-color);
+}
+
+/* end product */
+
+/* bebgin sản phẩm nổi bật */
+#outstanding_products {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    background-color: var(--bg-color);
+}
+
+#woocommerce_products_3 ul {
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 2%;
+
+}
+
+#woocommerce_products_3 h3 {
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+#woocommerce_products_3 li {
+    background-color: var(--li-color);
+    padding-bottom: 20px;
+}
+
+#woocommerce_products_3 a {
+    text-decoration: none;
+}
+
+#woocommerce_products_3 .product-title {
+    display: block;
+    color: var(--product-title-color);
+    font-weight: bold;
+    width: 100%;
+}
+
+#woocommerce_products_3 .amount {
+    display: block;
+    color: var(--product-title-color);
+    width: 100%;
+}
+
+/* end sản phẩm nổi bật */
+
+/* begin news */
+.home-news.container.widget{
+    background-color: var(--bg-color);
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-top: solid grey 2px;
+}
+.home-news.container.widget h3{
+    font-size: 30px;
+    color: var(--text-color);
+    text-align: center;
+}
+.home-news.container.widget ul{
+    padding: 0;
+    list-style-type: none;
     display: flex;
 }
-
-.info img {
-    padding-right: 10px;
-    width: 80px;
-    height: 80px;
+.post-box.vertical-small{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 33%;
+    text-align: center;
 }
-
-.info a {
+.post-box.vertical-small img{
+    width: 100%;
+}
+.post-data .post-data-container .post-title a{
     text-decoration: none;
-    color: black;
-    padding-right: 20px;
+    color: var(--text-color);
 }
-
-/* Lĩnh */
+/* end news */
+/* end Lĩnh */
